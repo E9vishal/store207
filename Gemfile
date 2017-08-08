@@ -57,9 +57,9 @@ group :development do
   # Use bootstrap for design
   gem 'twitter-bootstrap-rails', '~> 4.0'
   # spree gem for shoping cart
-  gem 'spree', '~> 3.2', '>= 3.2.3'
-  gem 'spree_auth_devise', '~> 3.3'
-  gem 'spree_gateway', '~> 3.3'
+  gem 'spree', '~> 3.2.1'
+  gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
+  gem 'spree_gateway', github: 'spree/spree_gateway'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
