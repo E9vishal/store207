@@ -44,8 +44,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  # Use bootstrap for design
-  gem 'twitter-bootstrap-rails', '~> 4.0'
+
 end
 
 group :development do
@@ -55,6 +54,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Use bootstrap for design
+  gem 'twitter-bootstrap-rails', '~> 4.0'
+  # spree gem for shoping cart
+  gem 'spree', '~> 3.2', '>= 3.2.3'
+  gem 'spree_auth_devise', '~> 3.3'
+  gem 'spree_gateway', '~> 3.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
