@@ -44,6 +44,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'guard'
 
 end
 
@@ -56,9 +57,15 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # spree gem for shoping cart
   gem 'spree', '~> 3.2.1'
-  gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
+  gem 'spree_auth_devise', github: 'spree/spree_auth_devise' 
   gem 'spree_gateway', github: 'spree/spree_gateway'
+  gem 'spree_wallet'
+  
 end
+
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'spree_braintree_vzero', github: 'spree-contrib/spree_braintree_vzero'
+gem 'spree_delivery_slots', git: 'https://github.com/vinsol-spree-contrib/spree-delivery-slots'

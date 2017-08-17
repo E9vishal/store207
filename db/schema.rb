@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170808142072) do
+ActiveRecord::Schema.define(version: 20170817125144) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -134,6 +134,17 @@ ActiveRecord::Schema.define(version: 20170808142072) do
     t.integer  "stock_location_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+  end
+
+  create_table "spree_delivery_slots", force: :cascade do |t|
+    t.integer  "shipping_method_id"
+    t.string   "start_time"
+    t.string   "end_time"
+    t.datetime "deleted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["deleted_at"], name: "index_spree_delivery_slots_on_deleted_at"
+    t.index ["shipping_method_id"], name: "index_spree_delivery_slots_on_shipping_method_id"
   end
 
   create_table "spree_gateways", force: :cascade do |t|
@@ -637,7 +648,9 @@ ActiveRecord::Schema.define(version: 20170808142072) do
     t.decimal  "pre_tax_amount",               precision: 12, scale: 4, default: "0.0", null: false
     t.decimal  "taxable_adjustment_total",     precision: 10, scale: 2, default: "0.0", null: false
     t.decimal  "non_taxable_adjustment_total", precision: 10, scale: 2, default: "0.0", null: false
+    t.integer  "delivery_slot_id"
     t.index ["address_id"], name: "index_spree_shipments_on_address_id"
+    t.index ["delivery_slot_id"], name: "index_spree_shipments_on_delivery_slot_id"
     t.index ["number"], name: "index_shipments_on_number"
     t.index ["order_id"], name: "index_spree_shipments_on_order_id"
     t.index ["stock_location_id"], name: "index_spree_shipments_on_stock_location_id"
@@ -668,12 +681,13 @@ ActiveRecord::Schema.define(version: 20170808142072) do
     t.string   "name"
     t.string   "display_on"
     t.datetime "deleted_at"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
     t.string   "tracking_url"
     t.string   "admin_name"
     t.integer  "tax_category_id"
     t.string   "code"
+    t.boolean  "is_delivery_slots_enabled", default: false, null: false
     t.index ["deleted_at"], name: "index_spree_shipping_methods_on_deleted_at"
     t.index ["tax_category_id"], name: "index_spree_shipping_methods_on_tax_category_id"
   end
