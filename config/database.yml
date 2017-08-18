@@ -20,5 +20,5 @@ test:
 production:
   host: localhost
   database: mystore_production
-  username: mystore
-  password: mystore
+  username: mystore205
+  password: mystore205
