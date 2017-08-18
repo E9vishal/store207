@@ -4,12 +4,9 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-defaults: &default
-  adapter: sqlite3
-  encoding: utf8
+
 
 development:
-  <<: *default
   host: localhost
   database: db/development.sqlite3
 
@@ -17,12 +14,10 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
   host: localhost
   database: db/test.sqlite3
 
 production:
-  <<: *default
   host: localhost
   database: mystore_production
   username: mystore
