@@ -25,4 +25,5 @@ test:
 production:
   <<: *default
   host: localhost
-  database: db/production.sqlite3
+  username: mystore205
+  password: mystore205
