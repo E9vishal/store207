@@ -59,7 +59,7 @@ end
   gem 'spree', '~> 3.2.1'
   gem 'spree_auth_devise', github: 'spree/spree_auth_devise' 
   gem 'spree_gateway', github: 'spree/spree_gateway'
-  gem 'spree_wallet'
+  
   
   
 
