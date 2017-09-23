@@ -451,6 +451,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   omniauth-salesforce
+  paperclip (~> 4.3, >= 4.3.6)
   pg
   puma (~> 3.0)
   rails (~> 5.0.2)
