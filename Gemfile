@@ -37,6 +37,8 @@ gem "omniauth-salesforce"
 
 gem 'restforce', '~> 2.5.3'
 
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -50,7 +52,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'guard'
   gem 'sqlite3'
-  gem 'pg'
+ 
 
 end
 
