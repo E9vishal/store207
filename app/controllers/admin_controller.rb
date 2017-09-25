@@ -1,4 +1,4 @@
 class AdminController < ApplicationController
-	def salesforce_products
-	end
+  def index
+  end
 end
