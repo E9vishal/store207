@@ -12,6 +12,7 @@ gem 'rails', '~> 5.0.2'
 # Use pg for production database
 gem 'pg', group: [:production]
 
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 #Use rails 12factor in production
 gem 'rails_12factor', group: [:production]
 # Use Puma as the app server
