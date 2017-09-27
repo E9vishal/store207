@@ -40,9 +40,6 @@ gem 'restforce', '~> 2.5.3'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
-gem 'compass'
-gem 'compass-rails'
-
 
 
 # Use Redis adapter to run Action Cable in production
