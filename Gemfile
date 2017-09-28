@@ -38,7 +38,7 @@ gem "omniauth-salesforce"
 
 gem 'restforce', '~> 2.5.3'
 
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass'
 
 
 
