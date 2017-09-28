@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
 
 
-
 get  '/salesforce_products', to: 'spree/admin/salesforce_products#index'
 
   get 'auth/salesforce/callback', to: 'salesforce#callback'
 
+get  '/test_products', to: 'spree/admin/test_products#form'
  
 
   # This line mounts Spree's routes at the root of your application.
