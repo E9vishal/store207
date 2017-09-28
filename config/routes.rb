@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
 
-  get 'admin/index'
+get  '/salesforce_products', to: 'spree/admin/salesforce_products#index'
 
   get 'auth/salesforce/callback', to: 'salesforce#callback'
 
