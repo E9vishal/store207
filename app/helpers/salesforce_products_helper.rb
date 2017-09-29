@@ -1,0 +1,2 @@
+module SalesforceProductsHelper
+end
