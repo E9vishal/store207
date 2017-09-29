@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
 
-  get 'salesforce_products/index'
+ get 'salesforce_products/index'
 
-  get 'auth/salesforce/callback', to: 'salesforce#callback'
+get 'auth/salesforce/callback', to: 'salesforce#callback'
 
 
  
