@@ -40,6 +40,8 @@ gem 'restforce', '~> 2.5.3'
 
 gem 'bootstrap-sass'
 
+gem 'jquery-ui-rails'
+
 
 
 # Use Redis adapter to run Action Cable in production
